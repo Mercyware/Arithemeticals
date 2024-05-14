@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03A2CE03-1167-4B68-B31D-9B89D56A6520}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ArithemeticSoftware.My.MyApplication</StartupObject>
+    <RootNamespace>ArithemeticSoftware</RootNamespace>
+    <AssemblyName>ArithemeticSoftware</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ArithemeticSoftware.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ArithemeticSoftware.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NewLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FilesModule.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAchievement.Designer.vb">
+      <DependentUpon>frmAchievement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAchievement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorMsg.Designer.vb">
+      <DependentUpon>frmErrorMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameOver.Designer.vb">
+      <DependentUpon>frmGameOver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameOver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmName.Designer.vb">
+      <DependentUpon>frmName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewLevel.Designer.vb">
+      <DependentUpon>frmNewLevel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewLevel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuit.Designer.vb">
+      <DependentUpon>frmQuit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRestart.Designer.vb">
+      <DependentUpon>frmRestart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRestart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeUp.Designer.vb">
+      <DependentUpon>frmTimeUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWho.Designer.vb">
+      <DependentUpon>frmWho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameChanger.Designer.vb">
+      <DependentUpon>GameChanger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameChanger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QuestionsModule.vb" />
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAchievement.resx">
+      <DependentUpon>frmAchievement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorMsg.resx">
+      <DependentUpon>frmErrorMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameOver.resx">
+      <DependentUpon>frmGameOver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmName.resx">
+      <DependentUpon>frmName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewLevel.resx">
+      <DependentUpon>frmNewLevel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuit.resx">
+      <DependentUpon>frmQuit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestart.resx">
+      <DependentUpon>frmRestart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeUp.resx">
+      <DependentUpon>frmTimeUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWho.resx">
+      <DependentUpon>frmWho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameChanger.resx">
+      <DependentUpon>GameChanger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1lives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2lives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3lives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4lives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueDiamond1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bronze1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diamod1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gold1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenDiamond1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pearl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruby_Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewLogo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
